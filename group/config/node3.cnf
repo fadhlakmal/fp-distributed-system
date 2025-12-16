@@ -33,7 +33,7 @@ binlog_format = ROW
 transaction_write_set_extraction = XXHASH64
 
 loose-group_replication_bootstrap_group = OFF
-loose-group_replication_start_on_boot = OFF
+loose-group_replication_start_on_boot = ON
 loose-group_replication_ssl_mode = REQUIRED
 loose-group_replication_recovery_use_ssl = 1
 
