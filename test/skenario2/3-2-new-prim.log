@@ -1,0 +1,92 @@
+2025-12-17 22:35:56.937 | 2025-12-17 15:35:56+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.44-1debian12 started.
+2025-12-17 22:35:57.090 | 2025-12-17 15:35:57+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2025-12-17 22:35:57.096 | 2025-12-17 15:35:57+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.44-1debian12 started.
+2025-12-17 22:35:57.257 | 2025-12-17 15:35:57+00:00 [Note] [Entrypoint]: Initializing database files
+2025-12-17 22:35:57.266 | 2025-12-17T15:35:57.265294Z 0 [Warning] [MY-011069] [Server] The syntax '--master-info-repository' is deprecated and will be removed in a future release.
+2025-12-17 22:35:57.266 | 2025-12-17T15:35:57.265297Z 0 [Warning] [MY-011069] [Server] The syntax '--relay-log-info-repository' is deprecated and will be removed in a future release.
+2025-12-17 22:35:57.266 | 2025-12-17T15:35:57.265308Z 0 [Warning] [MY-011070] [Server] 'binlog_format' is deprecated and will be removed in a future release.
+2025-12-17 22:35:57.266 | 2025-12-17T15:35:57.265311Z 0 [Warning] [MY-011069] [Server] The syntax '--transaction-write-set-extraction' is deprecated and will be removed in a future release.
+2025-12-17 22:35:57.266 | 2025-12-17T15:35:57.265373Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.44) initializing of server in progress as process 81
+2025-12-17 22:35:57.274 | 2025-12-17T15:35:57.274068Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2025-12-17 22:35:58.048 | 2025-12-17T15:35:58.048287Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2025-12-17 22:35:58.632 | 2025-12-17T15:35:58.632473Z 0 [Warning] [MY-013501] [Server] Ignoring --plugin-load[_add] list as the server is running with --initialize(-insecure).
+2025-12-17 22:35:59.772 | 2025-12-17T15:35:59.772069Z 0 [Warning] [MY-000067] [Server] unknown variable 'loose-group_replication_bootstrap_group=OFF'.
+2025-12-17 22:35:59.772 | 2025-12-17T15:35:59.772098Z 0 [Warning] [MY-000067] [Server] unknown variable 'loose-group_replication_start_on_boot=OFF'.
+2025-12-17 22:35:59.772 | 2025-12-17T15:35:59.772101Z 0 [Warning] [MY-000067] [Server] unknown variable 'loose-group_replication_ssl_mode=REQUIRED'.
+2025-12-17 22:35:59.772 | 2025-12-17T15:35:59.772103Z 0 [Warning] [MY-000067] [Server] unknown variable 'loose-group_replication_recovery_use_ssl=1'.
+2025-12-17 22:35:59.772 | 2025-12-17T15:35:59.772104Z 0 [Warning] [MY-000067] [Server] unknown variable 'loose-group_replication_group_name=aaaaaaaa-bbbb-cccc-dddd-eeeeffff0000'.
+2025-12-17 22:35:59.772 | 2025-12-17T15:35:59.772106Z 0 [Warning] [MY-000067] [Server] unknown variable 'loose-group_replication_ip_allowlist=node1,node2,node3'.
+2025-12-17 22:35:59.772 | 2025-12-17T15:35:59.772108Z 0 [Warning] [MY-000067] [Server] unknown variable 'loose-group_replication_group_seeds=node1:33061,node2:33061,node3:33061'.
+2025-12-17 22:35:59.772 | 2025-12-17T15:35:59.772109Z 0 [Warning] [MY-000067] [Server] unknown variable 'loose-group_replication_single_primary_mode=ON'.
+2025-12-17 22:35:59.772 | 2025-12-17T15:35:59.772111Z 0 [Warning] [MY-000067] [Server] unknown variable 'loose-group_replication_enforce_update_everywhere_checks=OFF'.
+2025-12-17 22:35:59.772 | 2025-12-17T15:35:59.772112Z 0 [Warning] [MY-000067] [Server] unknown variable 'loose-group_replication_local_address=node2:33061'.
+2025-12-17 22:35:59.772 | 2025-12-17T15:35:59.772787Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+2025-12-17 22:36:04.775 | 2025-12-17 15:36:04+00:00 [Note] [Entrypoint]: Database files initialized
+2025-12-17 22:36:04.776 | 2025-12-17 15:36:04+00:00 [Note] [Entrypoint]: Starting temporary server
+2025-12-17 22:36:05.047 | 2025-12-17T15:36:05.039624Z 0 [Warning] [MY-011069] [Server] The syntax '--master-info-repository' is deprecated and will be removed in a future release.
+2025-12-17 22:36:05.048 | 2025-12-17T15:36:05.039631Z 0 [Warning] [MY-011069] [Server] The syntax '--relay-log-info-repository' is deprecated and will be removed in a future release.
+2025-12-17 22:36:05.048 | 2025-12-17T15:36:05.039648Z 0 [Warning] [MY-011070] [Server] 'binlog_format' is deprecated and will be removed in a future release.
+2025-12-17 22:36:05.048 | 2025-12-17T15:36:05.039653Z 0 [Warning] [MY-011069] [Server] The syntax '--transaction-write-set-extraction' is deprecated and will be removed in a future release.
+2025-12-17 22:36:05.048 | 2025-12-17T15:36:05.041537Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2025-12-17 22:36:05.048 | 2025-12-17T15:36:05.041595Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.44) starting as process 161
+2025-12-17 22:36:05.052 | 2025-12-17T15:36:05.052708Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2025-12-17 22:36:05.321 | 2025-12-17T15:36:05.320958Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2025-12-17 22:36:05.536 | 2025-12-17T15:36:05.536462Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2025-12-17 22:36:05.536 | 2025-12-17T15:36:05.536508Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2025-12-17 22:36:05.558 | 2025-12-17T15:36:05.558811Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+2025-12-17 22:36:05.559 | 2025-12-17T15:36:05.559015Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.44'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+2025-12-17 22:36:05.568 | 2025-12-17 15:36:05+00:00 [Note] [Entrypoint]: Temporary server started.
+2025-12-17 22:36:06.127 | Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+2025-12-17 22:36:06.127 | Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+2025-12-17 22:36:06.127 | Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+2025-12-17 22:36:07.102 | Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+2025-12-17 22:36:07.102 | Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+2025-12-17 22:36:07.102 | Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+2025-12-17 22:36:07.196 | 
+2025-12-17 22:36:07.198 | 2025-12-17 15:36:07+00:00 [Note] [Entrypoint]: Stopping temporary server
+2025-12-17 22:36:07.203 | 2025-12-17T15:36:07.203502Z 12 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.44).
+2025-12-17 22:36:10.563 | 2025-12-17T15:36:10.563510Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.44)  MySQL Community Server - GPL.
+2025-12-17 22:36:11.206 | 2025-12-17 15:36:11+00:00 [Note] [Entrypoint]: Temporary server stopped
+2025-12-17 22:36:11.206 | 
+2025-12-17 22:36:11.206 | 2025-12-17 15:36:11+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+2025-12-17 22:36:11.206 | 
+2025-12-17 22:36:11.423 | 2025-12-17T15:36:11.420698Z 0 [Warning] [MY-011069] [Server] The syntax '--master-info-repository' is deprecated and will be removed in a future release.
+2025-12-17 22:36:11.423 | 2025-12-17T15:36:11.420703Z 0 [Warning] [MY-011069] [Server] The syntax '--relay-log-info-repository' is deprecated and will be removed in a future release.
+2025-12-17 22:36:11.423 | 2025-12-17T15:36:11.420716Z 0 [Warning] [MY-011070] [Server] 'binlog_format' is deprecated and will be removed in a future release.
+2025-12-17 22:36:11.423 | 2025-12-17T15:36:11.420720Z 0 [Warning] [MY-011069] [Server] The syntax '--transaction-write-set-extraction' is deprecated and will be removed in a future release.
+2025-12-17 22:36:11.423 | 2025-12-17T15:36:11.421764Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2025-12-17 22:36:11.423 | 2025-12-17T15:36:11.421812Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.44) starting as process 1
+2025-12-17 22:36:11.427 | 2025-12-17T15:36:11.427641Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2025-12-17 22:36:11.613 | 2025-12-17T15:36:11.613254Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2025-12-17 22:36:11.840 | 2025-12-17T15:36:11.840112Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2025-12-17 22:36:11.840 | 2025-12-17T15:36:11.840157Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2025-12-17 22:36:11.856 | 2025-12-17T15:36:11.856386Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+2025-12-17 22:36:11.856 | 2025-12-17T15:36:11.856563Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.44'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2025-12-17 22:36:13.431 | 2025-12-17T15:36:13.431080Z 10 [Warning] [MY-010604] [Repl] Neither --relay-log nor --relay-log-index were used; so replication may break when this MySQL server acts as a replica and has his hostname changed!! Please use '--relay-log=node2-relay-bin' to avoid this problem.
+2025-12-17 22:36:13.439 | 2025-12-17T15:36:13.439019Z 10 [System] [MY-010597] [Repl] 'CHANGE REPLICATION SOURCE TO FOR CHANNEL 'group_replication_recovery' executed'. Previous state source_host='', source_port= 3306, source_log_file='', source_log_pos= 4, source_bind=''. New state source_host='', source_port= 3306, source_log_file='', source_log_pos= 4, source_bind=''.
+2025-12-17 22:36:13.456 | 2025-12-17T15:36:13.456336Z 10 [System] [MY-013587] [Repl] Plugin group_replication reported: 'Plugin 'group_replication' is starting.'
+2025-12-17 22:36:13.456 | 2025-12-17T15:36:13.456823Z 10 [System] [MY-011565] [Repl] Plugin group_replication reported: 'Setting super_read_only=ON.'
+2025-12-17 22:36:13.459 | 2025-12-17T15:36:13.459166Z 10 [Warning] [MY-011735] [Repl] Plugin group_replication reported: '[GCS] Automatically adding IPv4 localhost address to the allowlist. It is mandatory that it is added.'
+2025-12-17 22:36:13.459 | 2025-12-17T15:36:13.459189Z 10 [Warning] [MY-011735] [Repl] Plugin group_replication reported: '[GCS] Automatically adding IPv6 localhost address to the allowlist. It is mandatory that it is added.'
+2025-12-17 22:36:13.473 | 2025-12-17T15:36:13.473333Z 12 [System] [MY-010597] [Repl] 'CHANGE REPLICATION SOURCE TO FOR CHANNEL 'group_replication_applier' executed'. Previous state source_host='', source_port= 3306, source_log_file='', source_log_pos= 4, source_bind=''. New state source_host='<NULL>', source_port= 0, source_log_file='', source_log_pos= 4, source_bind=''.
+2025-12-17 22:36:13.491 | 2025-12-17T15:36:13.491290Z 13 [System] [MY-014081] [Repl] Plugin group_replication reported: 'The Group Replication certifier broadcast thread (THD_certifier_broadcast) started.'
+2025-12-17 22:36:14.304 | 2025-12-17T15:36:14.303916Z 10 [System] [MY-011511] [Repl] Plugin group_replication reported: 'This server is working as secondary member with primary member address node1:3306.'
+2025-12-17 22:36:14.304 | 2025-12-17T15:36:14.303945Z 0 [System] [MY-011565] [Repl] Plugin group_replication reported: 'Setting super_read_only=ON.'
+2025-12-17 22:36:14.304 | 2025-12-17T15:36:14.304004Z 0 [System] [MY-013471] [Repl] Plugin group_replication reported: 'Distributed recovery will transfer data using: Incremental recovery from a group donor'
+2025-12-17 22:36:14.304 | 2025-12-17T15:36:14.304209Z 0 [System] [MY-011503] [Repl] Plugin group_replication reported: 'Group membership changed to node1:3306, node2:3306 on view 17659857721888575:2.'
+2025-12-17 22:36:14.328 | 2025-12-17T15:36:14.328642Z 24 [System] [MY-010597] [Repl] 'CHANGE REPLICATION SOURCE TO FOR CHANNEL 'group_replication_recovery' executed'. Previous state source_host='', source_port= 3306, source_log_file='', source_log_pos= 4, source_bind=''. New state source_host='node1', source_port= 3306, source_log_file='', source_log_pos= 4, source_bind=''.
+2025-12-17 22:36:14.346 | 2025-12-17T15:36:14.345789Z 25 [Warning] [MY-010897] [Repl] Storing MySQL user name or password information in the connection metadata repository is not secure and is therefore not recommended. Please consider using the USER and PASSWORD connection options for START REPLICA; see the 'START REPLICA Syntax' in the MySQL Manual for more information.
+2025-12-17 22:36:14.393 | 2025-12-17T15:36:14.392992Z 25 [System] [MY-014002] [Repl] Replica receiver thread for channel 'group_replication_recovery': connected to source 'repl@node1:3306' with server_uuid=14cf2aba-db5e-11f0-970d-9af461c62509, server_id=1. Starting GTID-based replication.
+2025-12-17 22:36:14.940 | 2025-12-17T15:36:14.940022Z 24 [System] [MY-010597] [Repl] 'CHANGE REPLICATION SOURCE TO FOR CHANNEL 'group_replication_recovery' executed'. Previous state source_host='node1', source_port= 3306, source_log_file='', source_log_pos= 4, source_bind=''. New state source_host='<NULL>', source_port= 0, source_log_file='', source_log_pos= 4, source_bind=''.
+2025-12-17 22:36:14.960 | 2025-12-17T15:36:14.960151Z 0 [System] [MY-011490] [Repl] Plugin group_replication reported: 'This server was declared online within the replication group.'
+2025-12-17 22:36:15.304 | 2025-12-17T15:36:15.304155Z 10 [System] [MY-014010] [Repl] Plugin group_replication reported: 'Plugin 'group_replication' has been started.'
+2025-12-17 22:36:16.296 | 2025-12-17T15:36:16.296600Z 0 [System] [MY-011503] [Repl] Plugin group_replication reported: 'Group membership changed to node1:3306, node3:3306, node2:3306 on view 17659857721888575:3.'
+2025-12-17 22:36:16.938 | 2025-12-17T15:36:16.938271Z 0 [System] [MY-011492] [Repl] Plugin group_replication reported: 'The member with address node3:3306 was declared online within the replication group.'
+2025-12-17 22:38:43.228 | 2025-12-17T15:38:43.228300Z 0 [Warning] [MY-011499] [Repl] Plugin group_replication reported: 'Members removed from the group: node1:3306'
+2025-12-17 22:38:43.229 | 2025-12-17T15:38:43.228364Z 0 [System] [MY-011500] [Repl] Plugin group_replication reported: 'Primary server with address node1:3306 left the group. Electing new Primary.'
+2025-12-17 22:38:43.229 | 2025-12-17T15:38:43.228501Z 0 [System] [MY-011507] [Repl] Plugin group_replication reported: 'A new primary with address node3:3306 was elected. The new primary will execute all previous group transactions before allowing writes.'
+2025-12-17 22:38:43.229 | 2025-12-17T15:38:43.229085Z 0 [System] [MY-011503] [Repl] Plugin group_replication reported: 'Group membership changed to node3:3306, node2:3306 on view 17659857721888575:4.'
+2025-12-17 22:38:43.229 | 2025-12-17T15:38:43.229848Z 177 [System] [MY-011565] [Repl] Plugin group_replication reported: 'Setting super_read_only=ON.'
+2025-12-17 22:38:43.229 | 2025-12-17T15:38:43.229887Z 177 [System] [MY-011511] [Repl] Plugin group_replication reported: 'This server is working as secondary member with primary member address node3:3306.'
+2025-12-17 22:39:32.069 | 2025-12-17T15:39:32.069415Z 0 [System] [MY-011503] [Repl] Plugin group_replication reported: 'Group membership changed to node1:3306, node3:3306, node2:3306 on view 17659857721888575:5.'
+2025-12-17 22:39:32.252 | 2025-12-17T15:39:32.252002Z 0 [System] [MY-011492] [Repl] Plugin group_replication reported: 'The member with address node1:3306 was declared online within the replication group.'
