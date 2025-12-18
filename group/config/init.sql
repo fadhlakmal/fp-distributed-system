@@ -1,0 +1,9 @@
+CREATE USER IF NOT EXISTS 'repl'@'%' IDENTIFIED BY 'repl';
+GRANT REPLICATION SLAVE ON *.* TO 'repl'@'%';
+GRANT ALL PRIVILEGES ON *.* TO 'repl'@'%';
+FLUSH PRIVILEGES;
+
+CHANGE MASTER TO 
+  MASTER_USER='repl', 
+  MASTER_PASSWORD='repl' 
+FOR CHANNEL 'group_replication_recovery';
