@@ -19,27 +19,12 @@ Skenario ini mendemonstrasikan pengaturan kluster Replikasi Grup MySQL, memantau
    bash db.sh
    ```
 
-3. **Pantau Kluster**: Di terminal baru, jalankan `monitor.sh` untuk terus memantau status replikasi grup.
+3. **Jalankan Script Scenario**: Jalankan `test.py` untuk menguji failover, dengan mensimulasikan kegagalan salah satu node.
    ```
-   bash monitor.sh
-   ```
-
-4. **Sisipkan Data**: Di terminal baru lainnya, jalankan `insert.sh` untuk memasukan data uji ke database.
-   ```
-   bash insert.sh
+   python3 test.py
    ```
 
-5. **Simulasi Kegagalan**: Di terminal baru lagi, jalankan `failure.sh` untuk mensimulasikan kegagalan node di kluster.
-   ```
-   bash failure.sh
-   ```
-
-6. **Mulai Ulang Sistem**: Setelah mengamati kegagalan, jalankan `restart.sh` untuk memulai ulang dan memulihkan kluster.
-   ```
-   bash restart.sh
-   ```
-
-7. **Pembersihan**: Ketika selesai, jalankan `down.sh` untuk menghentikan dan menghapus semua kontainer dan data.
+4. **Pembersihan**: Ketika selesai, jalankan `down.sh` untuk menghentikan dan menghapus semua kontainer dan data.
    ```
    bash down.sh
    ```
@@ -47,5 +32,4 @@ Skenario ini mendemonstrasikan pengaturan kluster Replikasi Grup MySQL, memantau
 ## Catatan
 
 - Pastikan setiap skrip dijalankan dalam urutan yang sesuai.
-- Skrip pemantauan mungkin berjalan tanpa batas; gunakan Ctrl+C untuk menghentikannya.
-- Sesuaikan konfigurasi di folder config/ jika diperlukan.
+- Skrip pemantauan mungkin berjalan tanpa batas, gunakan Ctrl+C untuk menghentikannya.
