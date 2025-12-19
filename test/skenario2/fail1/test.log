@@ -1,0 +1,129 @@
+(venv) reynaldineo@DESKTOP-3QCS6CA:~/sister/fp/test/skenario2(main⚡) » python3 fail.py
+
+================================================================================
+🚀 MySQL GROUP REPLICATION - PRIMARY FAILOVER TEST
+================================================================================
+
+📋 Step 1: Check initial Group Replication status
+
+================================================================================
+📊 Initial Group Status
+================================================================================
+Node       Host            Port   State        Role
+--------------------------------------------------------------------------------
+node1      node3           3306   ONLINE       SECONDARY
+node1      node2           3306   ONLINE       SECONDARY
+node1      node1           3306   ONLINE       PRIMARY
+================================================================================
+
+
+📋 Step 2: Identify current primary node
+✅ Current PRIMARY: node1 (Port: 3306)
+
+📋 Step 3: Setup test database
+
+🔧 Setting up test database...
+✅ Database and table created successfully
+
+📋 Step 4: Start continuous workload
+
+🔄 Starting continuous workload...
+
+⏳ Letting workload run for 10 seconds...
+📝 Inserted 10 transactions (Attempts: 10, Failed: 0)
+📝 Inserted 20 transactions (Attempts: 20, Failed: 0)
+
+📋 Step 5: Simulate PRIMARY node failure
+
+⚠️  Stopping PRIMARY node: node1
+
+🛑 Stopping container: node1
+✅ Container node1 stopped
+
+📋 Step 6: Observe failover process
+⏳ Waiting for new primary election...
+📝 Inserted 30 transactions (Attempts: 30, Failed: 0)
+
+✅ NEW PRIMARY ELECTED: node3 (Port: 3308)
+
+================================================================================
+📊 Status After Failover
+================================================================================
+Node       Host            Port   State        Role
+--------------------------------------------------------------------------------
+node1      node2           3306   ONLINE       SECONDARY
+node1      node3           3306   ONLINE       PRIMARY
+================================================================================
+
+
+⏳ Continuing workload on new primary for 10 seconds...
+📝 Inserted 40 transactions (Attempts: 40, Failed: 0)
+📝 Inserted 50 transactions (Attempts: 50, Failed: 0)
+
+📋 Step 7: Restart old primary node
+
+🗑️  Removing stopped container: node1
+✅ Container node1 removed
+
+▶️  Recreating container: node1 using docker-compose
+✅ Container node1 recreated and started
+⏳ Waiting for MySQL to be ready...
+📝 Inserted 60 transactions (Attempts: 60, Failed: 0)
+
+⚠️  FAILOVER DETECTED at 23:27:30.969
+
+✅ FAILOVER COMPLETED at 23:27:31.694
+⏱️  Failover Duration: 0.73 seconds
+📝 Inserted 69 transactions (Attempts: 70, Failed: 1)
+🔄 Rejoining node1 to cluster...
+✅ node1 already in cluster (auto-rejoined)
+
+⏳ Waiting for node to rejoin cluster...
+📝 Inserted 79 transactions (Attempts: 80, Failed: 1)
+📝 Inserted 89 transactions (Attempts: 90, Failed: 1)
+📝 Inserted 99 transactions (Attempts: 100, Failed: 1)
+
+================================================================================
+📊 Final Group Status
+================================================================================
+Node       Host            Port   State        Role
+--------------------------------------------------------------------------------
+node1      node1           3306   ONLINE       SECONDARY
+node1      node2           3306   ONLINE       SECONDARY
+node1      node3           3306   ONLINE       PRIMARY
+================================================================================
+
+
+📋 Step 8: Stopping workload
+
+================================================================================
+📈 FINAL STATISTICS
+================================================================================
+Total Insert Attempts: 105
+Successful Inserts: 104
+Failed Inserts: 1
+Success Rate: 99.05%
+
+⏱️  Failover Metrics:
+Failover Duration: 0.73 seconds
+Transactions Lost During Failover: 1
+
+❌ Errors Breakdown:
+  - no_primary: 1
+================================================================================
+
+
+📋 Step 9: Verify data consistency
+
+🔍 Verifying data consistency across nodes...
+
+📊 Transaction counts per node:
+  node1: 104
+  node2: 104
+  node3: 104
+
+✅ Data is consistent across all nodes!
+
+================================================================================
+✅ TEST COMPLETED
+================================================================================

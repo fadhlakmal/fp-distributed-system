@@ -1,8 +1,10 @@
 #!/bin/bash
 set -x
 
-docker compose -f ../../group/docker-compose.yaml up -d
+cd ../../group
 
-sleep 15
+bash start.sh
 
-bash ../../group/join.sh
+sleep 30
+
+bash join.sh
