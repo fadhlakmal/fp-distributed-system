@@ -69,7 +69,7 @@ RESULT3=$(docker exec $SECONDARY_NODE mysql -uroot -ppass partition_test \
 
 echo ""
 if [[ $RESULT3 == *"super-read-only"* ]] || [[ $RESULT3 == *"read-only"* ]]; then
-    echo "SUCCESS (Expected behavior)"
+    echo "FAILED (Expected behavior)"
     echo "Secondary correctly rejected write - it's in read-only mode"
 else
     echo "UNEXPECTED: Secondary accepted write (should not happen!)"
